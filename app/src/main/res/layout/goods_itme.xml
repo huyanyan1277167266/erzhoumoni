@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="10dp">
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/goodscb"/>
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/iv"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxx"
+            android:id="@+id/name"/>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_marginTop="20dp"
+               android:id="@+id/goodsprice"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="￥xxx"
+               android:textColor="@color/colorPrimary"/>
+        <com.bw.erzhoumoni.View.GoodsView
+            android:id="@+id/gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bw.erzhoumoni.View.GoodsView>
+
+       </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

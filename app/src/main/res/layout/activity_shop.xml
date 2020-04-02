@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShopActivity">
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rcv"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"></androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <CheckBox
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/cb"
+            android:text="全选"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/conut"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共几件"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共计："
+            android:textColor="@color/colorPrimary"/>
+        <Button
+            android:textColor="#ffffff"
+            android:id="@+id/bt"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去结算"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@mipmap/zhuce"
+    android:gravity="center">
+<EditText
+    android:id="@+id/phone"
+    android:hint="请输入手机号"
+    android:layout_width="280dp"
+    android:layout_height="50dp"
+    android:background="@null"
+    android:inputType="number"
+  android:textColorHint="#ffffff"/>
+    <View
+        android:layout_width="280dp"
+        android:layout_height="1dp"
+        android:background="#ffffff"></View>
+    <EditText
+       android:textColorHint="#ffffff"
+        android:background="@null"
+
+        android:layout_marginTop="10dp"
+        android:hint="请输入密码"
+        android:id="@+id/pwd"
+        android:layout_width="280dp"
+        android:layout_height="50dp" />
+    <View
+        android:layout_width="280dp"
+        android:layout_height="1dp"
+        android:background="#ffffff"></View>
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/bt"
+        android:text="登录"
+        android:background="@color/colorAccent"
+        android:layout_width="280dp"
+        android:layout_height="50dp" />
+
+
+</LinearLayout>
